@@ -1,0 +1,10 @@
+logo_placeholder.png
+house_example.png
+Smith Residence
+1234 Address Drive
+Union City, California 94587
+Nov 1, 2012
+254
+3084
+121
+218

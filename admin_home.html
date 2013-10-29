@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Admin</title>
+    <link href="css/stylesheet.css" rel="stylesheet" />
+	
+	<!--[if gte IE 9]>
+	<style type="text/css">
+		.gradient {
+			filter: none;
+		}
+	</style>
+	<![endif]-->
+	
+	<!-- jQuery libs -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	
+	<!-- custom js -->
+	<script src="js/main.js"></script>
+	<!-- page specific -->
+	<script src="js/home.js"></script>
+	
+	
+</head>
+<body>
+
+<div id="wrapper">
+
+	<!-- background transparent fullscreen overlay -->
+	<div id="overlay-bg"></div>
+	
+	<!-- start: login popup block -->
+	<div id="popup-login">
+		<div class="login-title"><span class="first-letter">U</span>ser <span class="first-letter">L</span>ogin</div>
+		<div class="login-username"><input type=text" id="login-username" value="Username" rel="Username" /></div>
+		<div class="login-password">
+			<!-- Real password input field (hides characters on screen) -->
+			<input type="password" id="login-password" />
+			<!-- Fake password field (displays the text "Password" on screen) -->
+			<input type="text" id="password-clear" value="Password" autocomplete="off" />
+		</div>
+		<div class="login-forgot"><a href="#">Forgot Details?</a></div>
+		<div class="login-signin"><a id="login-signin-btn" href="#">Sign In</a></div>
+	</div>
+	<!-- end: login popup block -->
+
+	<div id="page">
+	
+	<!-- start: header -->
+		<div id="header">
+			<div id="logo">
+				<div id="logo-container">
+					<img id="logo-img" src="img/logo/logo_placeholder.png" /> <!-- logo resizes automatically to fit header area, loaded from file data -->
+				</div>
+			</div>
+			<ul id="top-nav"><!-- top nav links, first letter is in separate span to be sized accordingly -->
+				<li><a id="login-btn" class="text40" href="#"><span class="text46">L</span>ogin</a></li>
+				<li><a class="text40" href="#"><span class="text46">C</span>ontact&nbsp;&nbsp;<span class="text46">U</span>s</a></li>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+	<!-- end: header -->
+	
+		<div id="page-title">
+			<!-- top left title, first letters are sized seperately -->
+			<div class="main-title text36"><span class="text44">A</span>dmin</div>
+		</div>
+		
+	<!-- start: page content -->
+		<div class="admin-panel admin-panel-left">
+	
+			<div class="admin-content-box content-box-gray text24 last-box">
+			<form>
+				<div class="dashboard-header">
+					<span class="dashboard-title text32_24">Channel Partner Setup</span>
+				</div>
+				
+				<!-- start: signup inputs -->
+				<div class="admin-form-row">Company Name</div>
+				<div class="admin-form-row"><input class="text24-18" type="text" /></div>
+				
+				<div class="admin-form-row">Address</div>
+				<div class="admin-form-row"><input class="text24-18" type="text" /></div>
+				
+				<div class="admin-form-row half-row">City</div>
+				<div class="admin-form-row half-row">Zip Code</div>
+				<div class="clearfix"></div>
+				<div class="admin-form-row half-row"><input class="text24-18" type="text" /></div>
+				<div class="admin-form-row half-row"><input class="text24-18" type="text" /></div>
+				<div class="clearfix"></div>
+				
+				<div class="admin-form-row half-row">Phone</div>
+				<div class="admin-form-row half-row">Email</div>
+				<div class="clearfix"></div>
+				<div class="admin-form-row half-row"><input class="text24-18" type="text" /></div>
+				<div class="admin-form-row half-row"><input class="text24-18" type="text" /></div>
+				<div class="clearfix"></div>
+				
+				<div class="admin-form-row half-row">Zip Codes Assigned</div>
+				<div class="admin-form-row half-row">Partner Type Code</div>
+				<div class="clearfix"></div>
+				<div class="admin-form-row half-row"><input class="text24-18" type="text" /></div>
+				<div class="admin-form-row half-row"><input class="text24-18" type="text" /></div>
+				<div class="clearfix"></div>
+				
+				<div class="admin-form-row">Number of Licenses</div>
+				<div class="admin-form-row half-row"><input class="text24-18" type="text" /></div>
+				<div class="clearfix"></div>
+				<!-- end: signup inputs -->
+				
+				<div class="content-box-orange partner-submit text42 gradient">
+					<a id="partner-submit-btn" href="#">Submit</a>
+				</div>
+				<div class="clearfix"></div>
+					
+			</form>
+			</div>
+			<div class="channel-report">
+				<a class="admin-link text22" href="#">Channel Report</a>
+			</div>
+		</div>
+		<div class="admin-panel admin-panel-right">
+			<div class="content-box-gray text24-18">
+				<div class="dashboard-header">
+					<span class="dashboard-title text32_24">Channel Management</span>
+				</div>
+				<div class="management-link"><a class="admin-link text28" href="#">Lead Assignment - View Open Leads</a></div>
+				<div class="management-link"><a class="admin-link text28" href="#">Customer Conversion - View Open Proposals</a></div>
+				<div class="management-link"><a class="admin-link text28" href="#">Customer Active - Energy Reports</a></div>
+			</div>
+			<div class="content-box-gray text24-18 last-box">
+				<div class="dashboard-header">
+					<span class="dashboard-title text32_24">Proposal Management</span>
+				</div>
+				<div class="management-link"><a class="admin-link text28" href="#">Proposal Generator Settings</a></div>
+			</div>
+		</div>
+	<!-- end: page content -->
+		
+	</div>
+
+</div>
+
+</body>
+</html>

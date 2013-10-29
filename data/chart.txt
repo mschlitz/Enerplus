@@ -1,0 +1,10 @@
+2300 SQ FT
+$254
+Name
+Month,Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec
+Price,80,80,160,140,110,140,240,190,150,155,170,145
+Kwh,75,110,180,165,150,220,280,210,160,150,140,150
+15087
+87%
+33% Less
+icon_down.png

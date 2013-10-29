@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Dashboard</title>
+    <link href="css/stylesheet.css" rel="stylesheet" />
+	
+	<!--[if gte IE 9]>
+	<style type="text/css">
+		.gradient {
+			filter: none;
+		}
+	</style>
+	<![endif]-->
+	
+	<!-- jQuery libs -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	
+	<!-- custom js -->
+	<script src="js/main.js"></script>
+	<!-- page specific -->
+	<script src="js/home.js"></script>
+	
+	
+</head>
+<body>
+
+<div id="wrapper">
+
+	<!-- background transparent fullscreen overlay -->
+	<div id="overlay-bg"></div>
+	
+	<!-- start: login popup block -->
+	<div id="popup-login">
+		<div class="login-title"><span class="first-letter">U</span>ser <span class="first-letter">L</span>ogin</div>
+		<div class="login-username"><input type=text" id="login-username" value="Username" rel="Username" /></div>
+		<div class="login-password">
+			<!-- Real password input field (hides characters on screen) -->
+			<input type="password" id="login-password" />
+			<!-- Fake password field (displays the text "Password" on screen) -->
+			<input type="text" id="password-clear" value="Password" autocomplete="off" />
+		</div>
+		<div class="login-forgot"><a href="#">Forgot Details?</a></div>
+		<div class="login-signin"><a id="login-signin-btn" href="#">Sign In</a></div>
+	</div>
+	<!-- end: login popup block -->
+
+	<div id="page">
+	
+	<!-- start: header -->
+		<div id="header">
+			<div id="logo">
+				<div id="logo-container">
+					<img id="logo-img" src="img/logo/logo_placeholder.png" /> <!-- logo resizes automatically to fit header area, loaded from file data -->
+				</div>
+			</div>
+			<ul id="top-nav"><!-- top nav links, first letter is in separate span to be sized accordingly -->
+				<li><a id="login-btn" class="text40" href="#"><span class="text46">L</span>ogin</a></li>
+				<li><a class="text40" href="#"><span class="text46">C</span>ontact&nbsp;&nbsp;<span class="text46">U</span>s</a></li>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+	<!-- end: header -->
+	
+		<div id="page-title">
+			<!-- top left title, first letters are sized seperately -->
+			<div class="main-title text36"><span class="text44">D</span>ashboard - Sales Person</div>
+		</div>
+		
+	<!-- start: page content -->
+		<div class="dashboard-panel dashboard-left content-box-gray text18-16">
+		<form>
+			<div class="dashboard-header">
+				<span class="dashboard-title text32_24">Customer Leads</span>
+				<a class="create-lead" href="#">+</a>
+			</div>
+			<div class="dashboard-total">
+				<span>Total #:</span> <input type="text" /> <a class="refresh-total" href="#"><img src="img/refresh.png" /></a>
+			</div>
+			<div class="dashboard-search">
+				<input type="text" value="Search..." rel="Search..." />
+			</div>
+			<table cellspacing="0" cellpadding="0" id="customer-leads" class="dashboard-table">
+				<tr>
+					<th class="first gradient" width="25%">Name</th>
+					<th class="gradient" width="25%">Source</th>
+					<th class="last gradient">Status</th>
+				<tr/>
+				<tr class="table-head-gap"><td></td><td></td><td></td></tr>
+			<!-- start: customer leads table rows -->
+				<tr>
+					<td>Jones</td>
+					<td>Email</td>
+					<td>Call pending</td>
+				</tr>
+				<tr>
+					<td>Wood</td>
+					<td>Online</td>
+					<td>Active - Audit On</td>
+				</tr>
+				<tr>
+					<td>Joule</td>
+					<td>Partner</td>
+					<td>Active - Audit On</td>
+				</tr>
+				<tr>
+					<td>Smith</td>
+					<td>Email</td>
+					<td>Apointment set</td>
+				</tr>
+			<!-- end: customer leads table rows -->
+			</table>
+		</form>
+		</div>
+		<div class="dashboard-panel dashboard-right content-box-gray text18-16">
+		<form>
+			<div class="dashboard-header">
+				<span class="dashboard-title text32_24">Customer Proposals</span>
+			</div>
+			<div class="dashboard-total">
+				<span>Total #:</span> <input type="text" /> <a class="refresh-total" href="#"><img src="img/refresh.png" /></a>
+			</div>
+			<div class="dashboard-search">
+				<input type="text" value="Search..." rel="Search..." />
+			</div>
+			<table cellspacing="0" cellpadding="0" id="customer-proposals" class="dashboard-table">
+				<tr>
+					<th class="first gradient" width="25%">Name</th>
+					<th class="gradient">Date</th>
+					<th class="last gradient" width="25%">Type</th>
+				<tr/>
+				<tr class="table-head-gap"><td></td><td></td><td></td></tr>
+			<!-- start: customer proposals table rows -->
+				<tr>
+					<td>Kindle</td>
+					<td>May 1, 2013</td>
+					<td>Solar</td>
+				</tr>
+				<tr>
+					<td>Wood</td>
+					<td>April 20, 2013</td>
+					<td>EE</td>
+				</tr>
+				<tr>
+					<td>Jones</td>
+					<td>March 31, 2013</td>
+					<td>Solar+EE</td>
+				</tr>
+			<!-- end: customer leads table rows -->
+			</table>
+		</form>
+		</div>
+	<!-- end: page content -->
+		
+	</div>
+
+</div>
+
+</body>
+</html>

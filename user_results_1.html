@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Results Page 1</title>
+    <link href="css/stylesheet.css" rel="stylesheet" />
+	
+	<!--[if gte IE 9]>
+	<style type="text/css">
+		.gradient {
+			filter: none;
+		}
+	</style>
+	<![endif]-->
+	
+	<!-- jQuery libs -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	
+	<!-- custom js -->
+	<script src="js/main.js"></script>
+	<script src="js/results_1.js"></script><!-- page specific -->
+	
+	
+</head>
+<body>
+
+<div id="wrapper">
+
+	<!-- background transparent fullscreen overlay -->
+	<div id="overlay-bg"></div>
+	
+	<!-- start: login popup block -->
+	<div id="popup-login">
+		<div class="login-title"><span class="first-letter">U</span>ser <span class="first-letter">L</span>ogin</div>
+		<div class="login-username"><input type="text" id="login-username" value="Username" rel="Username" /></div>
+		<div class="login-password">
+			<!-- Real password input field (hides characters on screen) -->
+			<input type="password" id="login-password" />
+			<!-- Fake password field (displays the text "Password" on screen) -->
+			<input type="text" id="password-clear" value="Password" autocomplete="off" />
+		</div>
+		<div class="login-forgot"><a href="#">Forgot Details?</a></div>
+		<div class="login-signin"><a id="login-signin-btn" href="#">Sign In</a></div>
+	</div>
+	<!-- end: login popup block -->
+
+	<div id="page">
+	
+	<!-- start: header -->
+		<div id="header">
+			<div id="logo">
+				<div id="logo-container">
+					<img id="logo-img" src="img/logo/logo_placeholder.png" /> <!-- logo resizes automatically to fit header area, loaded from file data -->
+				</div>
+			</div>
+			<ul id="top-nav"><!-- top nav links, first letter is in separate span to be sized accordingly -->
+				<li><a class="text40" href="./user_summary_options.html"><span class="text46">H</span>ome</a></li>
+				<li><a class="text40" href="http://enerplussolutions.com/"><span class="text46">C</span>ontact</a></li>
+				<li><a class="text40" id="logout-btn" href="#"><span class="text46">L</span>og Off</a></li>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+	<!-- end: header -->
+	
+	<!-- start: left side -->
+		<div id="left-side">
+			<!-- top left title, first letters are sized seperately -->
+			<div class="left-title text36"><span class="text44">E</span>nergy <span class="text44">E</span>fficiency</div>
+			<!-- savings block -->
+			<div class="content-box-orange savings-box gradient">
+				<div class="orange-title text32" href="">Savings Guarantee Of</div>
+				<div class="orange-details text32"><img src="img/dollar_sign3.png" /><span id="savings-guarantee" class="orange-num text110">121</span> Per Year!</div><!-- data loaded from file -->
+			</div>
+			<!-- live data block -->
+			<div class="content-box-gray small-box-gray text22">
+				<div class="boldface">This is live data from your home!</div>
+				<div>ENERPLUS Estimates you have spent:</div>
+				<div><span class="boldface">$<span id="spent-elec-month">189</span></span> on electricity this month.</div><!-- data loaded from file -->
+			</div>
+			<!-- map block -->
+			<div class="map-box last-box">
+				<div class="map-title text22">Check out others in your area who have signed up and benefit!</div>
+				<div class="map-div"><img src="img/world_map.png" /></div>
+			</div>
+		</div>
+	<!-- end: left side -->
+		
+	<!-- start: right side -->
+		<div id="right-side" class="result-page">
+			<div class="content-box-gray small-box-gray data-result">
+				<div class="data-title text28">Your Investment Now</div>
+				<div class="data-details">
+					<div class="data-num text106"><img class="dollar-sign" src="img/dollar_sign.png" /><span id="investment-now">8700</span></div><!-- data loaded from file -->
+				</div>
+			</div>
+			<div class="content-box-gray small-box-gray data-result">
+				<div class="data-title text28">Make Your Money Back In</div>
+				<div class="data-details">
+					<div class="data-num text106"><span id="money-back-period">9</span><span class="data-num-text text80"> Yrs</span></div><!-- data loaded from file -->
+				</div>
+			</div>
+			<div class="content-box-gray small-box-gray data-result">
+				<div class="data-title text28">Save This Amount In 10 Yrs</div>
+				<div class="data-details">
+					<div class="data-num text106"><img class="dollar-sign" src="img/dollar_sign.png" /><span id="amount-10-year">12100</span></div><!-- data loaded from file -->
+				</div>
+			</div>
+			<div class="content-box-gray small-box-gray data-result">
+				<div class="data-title text28">That's a Guaranteed Return Of</div>
+				<div class="data-details">
+					<div class="data-num text106"><span id="guaranteed-return">20</span> %</div><!-- data loaded from file -->
+				</div>
+			</div>
+			<div class="content-box-orange small-box-orange accept-offer gradient">
+				<a id="accept-offer-btn" class="text64" href="">Accept Offer!</a>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		
+	</div>
+
+</div>
+
+</body>
+</html>
